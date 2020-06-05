@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  --color-primary-cyan: hsl(171, 66%, 44%);
+  --color-primary-light-blue: hsl(233, 100%, 69%);
+  --color-secondary-dark-grayish-blue: hsl(210, 10%, 33%);
+  --color-secondary-grayish-blue: hsl(201, 11%, 66%); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-secondary-dark-grayish-blue); }
+
+.logo-lg {
+  height: 11rem; }
+
+.logo-sm {
+  height: 6rem; }
+
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2; }
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 600; }
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 600; }
+
+.text {
+  max-width: 58%;
+  text-align: center; }
+  .text__content {
+    font-size: 1.8rem;
+    margin-top: 1.5rem; }
+
+.cta {
+  margin-top: 6rem; }
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.2rem 3rem;
+  border-radius: 5rem;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top: none; }
+
+.btn--download-ios {
+  background-color: var(--color-primary-cyan);
+  border: 3px solid #249e86;
+  box-shadow: 0 3px 2.5rem rgba(38, 186, 164, 0.5);
+  margin-right: 2rem; }
+  .btn--download-ios:hover {
+    background-color: rgba(38, 186, 164, 0.8);
+    border-color: rgba(36, 158, 134, 0.7); }
+
+.btn--download-mac {
+  background-color: var(--color-primary-light-blue);
+  border: 3px solid #5461d9;
+  box-shadow: 0 3px 2.5rem rgba(97, 115, 255, 0.5); }
+  .btn--download-mac:hover {
+    background-color: rgba(97, 115, 255, 0.8);
+    border-color: rgba(84, 97, 217, 0.8); }
+
+.track-grid {
+  align-self: flex-start;
+  margin-top: 6rem;
+  display: flex; }
+  .track-grid__photo {
+    background-image: url(../imgs/image-computer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 58rem;
+    width: 80rem;
+    margin-right: 9rem;
+    margin-left: -18rem; }
+  .track-grid__item {
+    margin-top: 4rem;
+    max-width: 60%; }
+  .track-grid__text {
+    font-size: 1.5rem; }
+
+.clipboard__photo {
+  background-image: url(../imgs/image-devices.png);
+  background-size: contain;
+  height: 58rem;
+  width: 90rem;
+  margin-top: 10rem; }
+
+.workflow__features-grid {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.workflow__features-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.workflow__features-grid-icon {
+  margin-bottom: 4rem; }
+
+.workflow__text {
+  font-size: 1.7rem;
+  text-align: center;
+  max-width: 95%; }
+
+.workflow__partners-grid {
+  margin-top: 12rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 9rem; }
+
+.footer__links {
+  margin-left: 15rem;
+  margin-right: auto;
+  list-style: none;
+  font-size: 2rem;
+  column-count: 3;
+  column-gap: 9rem; }
+
+.footer__links-item {
+  margin-bottom: 1rem; }
+
+.footer__links-link, .footer__links-link:link, .footer__links-link:visited {
+  text-decoration: none;
+  color: var(--color-secondary-dark-grayish-blue); }
+
+.footer__links-link:hover {
+  color: var(--color-primary-cyan); }
+
+.footer__socials {
+  display: flex; }
+
+.footer__social-link:not(:last-child) {
+  margin-right: 3rem; }
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--color-secondary-dark-grayish-blue); }
+  .social-icon:hover {
+    fill: var(--color-primary-cyan); }
+
+.container > * {
+  padding: 0 15rem; }
+
+.header {
+  background-image: url(../imgs/bg-header-desktop.png);
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.main {
+  background-color: #fff; }
+
+.main > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.section-about {
+  flex-direction: column;
+  margin-top: 5rem; }
+
+.section-track {
+  margin-top: 12rem; }
+
+.section-clipboard {
+  margin-top: 6rem; }
+
+.section-workflow {
+  margin-top: 6rem; }
+
+.section-download {
+  margin-top: 12rem; }
+
+.footer {
+  margin-top: 12rem;
+  background-color: rgba(159, 171, 178, 0.1);
+  display: flex;
+  align-items: flex-start;
+  padding: 4rem 15rem; }

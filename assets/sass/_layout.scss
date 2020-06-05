@@ -1,0 +1,56 @@
+.container{
+
+}
+
+.container > * {
+    padding: 0 15rem;
+}
+
+.header{
+    background-image: url(../imgs/bg-header-desktop.png);
+    background-size: cover;
+    background-position: center;
+
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main{
+    background-color: #fff;
+}
+
+.main > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-about{
+    flex-direction: column;
+
+    margin-top: 5rem;
+}
+
+.section-track{
+    margin-top: $margin-top-lg;
+}
+.section-clipboard{
+    margin-top: $margin-top-md;
+}
+.section-workflow{
+    margin-top: $margin-top-md;
+}
+.section-download{
+    margin-top: $margin-top-lg;
+}
+
+.footer{
+    margin-top: $margin-top-lg;
+    background-color: hsla(201, 11%, 66%, 0.1);
+    display: flex;
+    align-items: flex-start;
+    padding: 4rem 15rem;
+}
