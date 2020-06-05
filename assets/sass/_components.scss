@@ -53,6 +53,7 @@
         border-right-width: 1px;
         border-left-width: 1px;
         border-top: none;
+        transition: all 0.2s;
     }
 
     &--download-ios{
@@ -187,6 +188,7 @@
     width: 30px;
     height: 30px;
     fill: var(--color-secondary-dark-grayish-blue);
+    transition: all 0.2s;
 
     &:hover{
         fill: var(--color-primary-cyan);
