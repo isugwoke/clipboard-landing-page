@@ -1,9 +1,19 @@
 .container{
+    overflow: hidden;
 
 }
 
 .container > * {
     padding: 0 15rem;
+
+    @media only screen and (max-width: $bp-lg){
+        padding: 0 6rem;
+
+    }
+    @media only screen and (max-width: $bp-sm){
+        padding: 0 4rem;
+
+    }
 }
 
 .header{
@@ -15,6 +25,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    @media only screen and (max-width: $bp-sm){
+        background-image: url(../imgs/bg-header-mobile.png);
+    }
 }
 
 .main{
@@ -26,11 +40,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .section-about{
-    flex-direction: column;
-
     margin-top: 5rem;
 }
 
@@ -52,5 +65,12 @@
     background-color: hsla(201, 11%, 66%, 0.1);
     display: flex;
     align-items: flex-start;
-    padding: 4rem 15rem;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+
+    @media only screen and (max-width: $bp-sm){
+        flex-direction: column;
+        align-items: center;
+    }
 }
